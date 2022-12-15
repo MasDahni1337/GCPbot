@@ -1,0 +1,24 @@
+{
+  "name": "gcpgpt",
+  "version": "1.0.0",
+  "description": "GCP bot discord Chat GPT",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dahni",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "env2": "^2.2.2",
+    "next": "^13.0.6",
+    "openai": "^3.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "env2",
+  "version": "2.2.2",
+  "description": "Environment Variable Loader",
+  "keywords": [
+    "env",
+    "environment",
+    "variables",
+    "config",
+    "file",
+    "aws",
+    "lambda",
+    "webpack",
+    "universal",
+    "fast",
+    "secure",
+    "easy",
+    "tested"
+  ],
+  "author": "Nelson <contact.nelsonic@gmail.com> (http://www.dwyl.io)",
+  "contributors": [
+    {
+      "name": "Rafe Kennedy",
+      "email": "@rjmk <contact.rafe@gmail.com>"
+    }
+  ],
+  "inspired-by": "https://github.com/dshaw/env (see: http://git.io/vOjWp)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwyl/env2"
+  },
+  "issues": {
+    "url": "https://github.com/dwyl/env2/issues"
+  },
+  "main": "lib/env.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "decache": "^4.4.0",
+    "istanbul": "^0.4.5",
+    "pre-commit": "^1.2.2",
+    "tape": "^4.9.1"
+  },
+  "scripts": {
+    "test": "istanbul cover tape ./test/*.js",
+    "check-coverage": "istanbul cover tape ./test/*.js && istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100"
+  },
+  "pre-commit": [
+    "check-coverage"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "GPL-2.0"
+}
